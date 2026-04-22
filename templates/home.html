@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentimentAI | Enterprise Sentiment Analysis</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <style>
+        .hero-section {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, rgba(3,7,18,0) 70%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            z-index: 10;
+            max-width: 1000px;
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: 4.5rem;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-muted) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 24px;
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+            max-width: 600px;
+            margin-inline: auto;
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .cta-container {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .btn-glow {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+            transform: skewX(-20deg);
+            animation: shine 3s infinite;
+        }
+
+        .btn-large {
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .nav-top {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 48px;
+            z-index: 50;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 80px;
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .feature-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            padding: 32px;
+            border-radius: 12px;
+            text-align: left;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-focus);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(99,102,241,0.1);
+            color: var(--accent-primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            20% { left: 200%; }
+            100% { left: 200%; }
+        }
+
+        @media (max-width: 992px) {
+            .features-grid { grid-template-columns: 1fr; max-width: 400px; margin-inline: auto; }
+            .hero-title { font-size: 3rem; }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-top { padding: 16px 24px; }
+            .hero-section { padding-top: 80px; }
+            .cta-container { flex-direction: column; width: 100%; max-width: 300px; margin: 0 auto; }
+            .btn-large { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-bg"></div>
+
+    <nav class="nav-top">
+        <a href="/" class="brand" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+            <i data-lucide="activity" class="brand-logo" style="color: var(--accent-primary)"></i>
+            <span class="brand-text" style="font-size: 1.25rem; font-family: var(--font-heading); font-weight: 700; color: var(--text-primary);">SentimentAI</span>
+        </a>
+        <div>
+            <button id="theme-toggle" class="btn btn-secondary" style="padding: 8px; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                <i data-lucide="sun" id="theme-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="status-badge" style="margin-bottom: 24px; background: rgba(99,102,241,0.1); color: var(--accent-primary); border-color: rgba(99,102,241,0.2);">
+                <i data-lucide="zap"></i> Powered by Machine Learning
+            </div>
+            <h1 class="hero-title">Decode Human Emotion at Scale</h1>
+            <p class="hero-subtitle">State-of-the-art sentiment analysis and opinion mining platform. Process text, detect emotions, and uncover hidden insights in milliseconds.</p>
+            
+            <div class="cta-container">
+                <a href="/dashboard" class="btn btn-large btn-glow" style="text-decoration: none;">
+                    Launch Dashboard <i data-lucide="arrow-right" style="margin-left: 8px; width: 18px; height: 18px;"></i>
+                </a>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 8px; color: var(--text-primary);">Dual ML Models</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Leverage both Logistic Regression and Naive Bayes for high-confidence predictions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 8px; color: var(--text-primary);">Real-time Inference</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Lightning fast processing capabilities for single inputs or batch CSV datasets.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="hexagon"></i>
+                    </div>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 8px; color: var(--text-primary);">Emotion Mapping</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Beyond sentiment. Discover joy, anger, fear, and nuanced emotions within text.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // Theme toggle logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+
+        function updateThemeIcon(theme) {
+            themeIcon.setAttribute('data-lucide', theme === 'light' ? 'moon' : 'sun');
+            lucide.createIcons();
+        }
+
+        const initialTheme = document.documentElement.getAttribute('data-theme');
+        updateThemeIcon(initialTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard | SentimentAI{% endblock %}
+{% block breadcrumb %}Platform <span>/</span> Analysis Dashboard{% endblock %}
+
+{% block content %}
+<div class="section-header">
+    <h1 class="section-title">Sentiment Analysis</h1>
+    <p class="section-desc">Real-time inference using Logistic Regression & Naive Bayes models.</p>
+</div>
+
+<div class="bento-grid">
+    <!-- Single Text Input Card -->
+    <div class="card col-span-8">
+        <div class="card-header">
+            <h2 class="card-title"><i data-lucide="terminal"></i> Text Inference</h2>
+        </div>
+        
+        <div class="input-group">
+            <div class="model-selector">
+                <label class="model-option">
+                    <input type="radio" name="model" value="lr" checked>
+                    Logistic Regression
+                </label>
+                <label class="model-option">
+                    <input type="radio" name="model" value="nb">
+                    Naive Bayes
+                </label>
+            </div>
+            
+            <textarea id="text-input" placeholder="Enter text to analyze sentiment, emotion, and intent..."></textarea>
+            
+            <div class="input-footer">
+                <div class="quick-samples" style="display: flex; gap: 8px;">
+                    <span style="font-size: 0.75rem; color: var(--text-muted); align-self: center;">Try:</span>
+                    <button class="sample-btn" data-sample="1">Sarcastic</button>
+                    <button class="sample-btn" data-sample="2">Mixed</button>
+                    <button class="sample-btn" data-sample="3">Neutral</button>
+                </div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <span class="char-counter" id="char-counter">0 / 5000</span>
+                    <button class="btn" id="btn-analyze">
+                        <i data-lucide="play"></i> Analyze Run
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Batch Upload Card -->
+    <div class="card col-span-4">
+        <div class="card-header">
+            <h2 class="card-title"><i data-lucide="upload-cloud"></i> Batch Processing</h2>
+        </div>
+        
+        <div class="model-selector">
+            <label class="model-option">
+                <input type="radio" name="model-file" value="lr" checked>
+                LR
+            </label>
+            <label class="model-option">
+                <input type="radio" name="model-file" value="nb">
+                NB
+            </label>
+        </div>
+
+        <div class="dropzone" id="dropzone">
+            <input type="file" id="file-input" accept=".txt,.csv" hidden>
+            <i data-lucide="file-plus"></i>
+            <div class="dropzone-text">Drag & drop dataset</div>
+            <div class="dropzone-hint">Supports .txt and .csv up to 5MB</div>
+        </div>
+
+        <div class="file-info" id="file-info">
+            <div class="file-name-wrap">
+                <i data-lucide="file-text"></i>
+                <span id="file-name">filename.csv</span>
+            </div>
+            <button class="remove-file" id="remove-file">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+
+        <button class="btn btn-secondary" id="btn-upload" disabled style="width: 100%; margin-top: 16px; justify-content: center;">
+            <i data-lucide="server"></i> Process Batch
+        </button>
+    </div>
+
+    <!-- Results Area (Dynamically shown) -->
+    <div id="single-result" class="col-span-12 result-pane">
+        <div class="bento-grid">
+            
+            <!-- Main Result Metrics -->
+            <div class="card col-span-6">
+                <div class="card-header">
+                    <h2 class="card-title"><i data-lucide="target"></i> Inference Result</h2>
+                    <span id="result-badge" class="status-badge positive"><i data-lucide="check-circle"></i> Positive</span>
+                </div>
+                
+                <div style="display: flex; gap: 48px; margin-bottom: 32px;">
+                    <div class="metric-block">
+                        <span class="metric-label">Confidence</span>
+                        <span class="metric-value" id="result-confidence">99.9%</span>
+                        <span class="metric-sub" id="result-model">Model: LR</span>
+                    </div>
+                </div>
+
+                <h3 class="metric-label" style="margin-bottom: 12px;">Class Probabilities</h3>
+                <div class="prob-bars">
+                    <div class="prob-item">
+                        <span class="prob-label">Positive</span>
+                        <div class="prob-track">
+                            <div class="prob-fill positive" id="prob-positive" style="width: 0%"></div>
+                        </div>
+                        <span class="prob-value" id="prob-positive-val">0%</span>
+                    </div>
+                    <div class="prob-item">
+                        <span class="prob-label">Negative</span>
+                        <div class="prob-track">
+                            <div class="prob-fill negative" id="prob-negative" style="width: 0%"></div>
+                        </div>
+                        <span class="prob-value" id="prob-negative-val">0%</span>
+                    </div>
+                    <div class="prob-item">
+                        <span class="prob-label">Neutral</span>
+                        <div class="prob-track">
+                            <div class="prob-fill neutral" id="prob-neutral" style="width: 0%"></div>
+                        </div>
+                        <span class="prob-value" id="prob-neutral-val">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VADER Gauge -->
+            <div class="card col-span-3">
+                <div class="card-header">
+                    <h2 class="card-title"><i data-lucide="activity"></i> VADER Intensity</h2>
+                </div>
+                
+                <div class="gauge-container">
+                    <svg class="gauge-svg" viewBox="0 0 200 100">
+                        <path class="gauge-bg" d="M 10 90 A 80 80 0 0 1 190 90" />
+                        <path class="gauge-fill" id="gauge-fill" d="M 10 90 A 80 80 0 0 1 190 90" />
+                    </svg>
+                    <div class="gauge-center">
+                        <div class="gauge-score" id="gauge-value">0.00</div>
+                        <div class="gauge-label">Compound Score</div>
+                    </div>
+                </div>
+                
+                <div class="vader-metrics">
+                    <div class="v-metric">
+                        <div class="v-val" style="color: var(--color-pos)" id="vader-pos">0</div>
+                        <div class="v-lbl">POS</div>
+                    </div>
+                    <div class="v-metric">
+                        <div class="v-val" style="color: var(--color-neg)" id="vader-neg">0</div>
+                        <div class="v-lbl">NEG</div>
+                    </div>
+                    <div class="v-metric">
+                        <div class="v-val" style="color: var(--color-neu)" id="vader-neu">0</div>
+                        <div class="v-lbl">NEU</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emotion Radar -->
+            <div class="card col-span-3">
+                <div class="card-header">
+                    <h2 class="card-title"><i data-lucide="hexagon"></i> Emotion Map</h2>
+                    <div id="top-emotion" class="status-badge" style="background: rgba(99,102,241,0.1); color: var(--accent-primary); border-color: rgba(99,102,241,0.2);">
+                        <i data-lucide="zap"></i> <span id="top-emotion-name">None</span>
+                    </div>
+                </div>
+                
+                <div class="chart-wrapper">
+                    <canvas id="emotion-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Input Text Display -->
+            <div class="card col-span-12" style="margin-top: 24px;">
+                <div class="card-header">
+                    <h2 class="card-title"><i data-lucide="message-square"></i> Evaluated Source</h2>
+                </div>
+                <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); background: var(--bg-base); padding: 16px; border-radius: 6px; border: 1px solid var(--border-subtle);" id="result-text"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Batch Results Pane -->
+    <div id="batch-result" class="col-span-12 result-pane">
+        <div class="bento-grid">
+            
+            <div class="card col-span-4">
+                <div class="card-header">
+                    <h2 class="card-title"><i data-lucide="pie-chart"></i> Distribution</h2>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="batch-chart"></canvas>
+                </div>
+                
+                <div class="vader-metrics" style="margin-top: 24px;">
+                    <div class="v-metric">
+                        <div class="v-val" style="color: var(--color-pos)" id="batch-pos">0</div>
+                        <div class="v-lbl">POS</div>
+                    </div>
+                    <div class="v-metric">
+                        <div class="v-val" style="color: var(--color-neg)" id="batch-neg">0</div>
+                        <div class="v-lbl">NEG</div>
+                    </div>
+                    <div class="v-metric">
+                        <div class="v-val" style="color: var(--color-neu)" id="batch-neu">0</div>
+                        <div class="v-lbl">NEU</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card col-span-8">
+                <div class="card-header">
+                    <h2 class="card-title"><i data-lucide="list"></i> Batch Records (<span id="batch-total">0</span>)</h2>
+                </div>
+                <div style="max-height: 400px; overflow-y: auto; padding-right: 8px;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Sample</th>
+                                <th>Classification</th>
+                                <th>Conf</th>
+                            </tr>
+                        </thead>
+                        <tbody id="batch-table-body">
+                            <!-- JS injected -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}

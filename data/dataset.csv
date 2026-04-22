@@ -1,0 +1,513 @@
+text,sentiment
+"I absolutely love this product it exceeded all my expectations",Positive
+"This is the worst purchase I have ever made total waste of money",Negative
+"The package arrived on time and was as described",Neutral
+"Amazing quality and the customer service was outstanding",Positive
+"Terrible experience the item broke after one day of use",Negative
+"The color of the item is blue and it weighs about 2 pounds",Neutral
+"Best thing I have bought this year highly recommend to everyone",Positive
+"Do not buy this product it is a complete scam",Negative
+"The dimensions match what was listed on the website",Neutral
+"Wonderful gift for my daughter she was so happy and excited",Positive
+"Horrible quality feels cheap and looks nothing like the pictures",Negative
+"Shipping took the standard five business days",Neutral
+"Exceeded my expectations in every way possible five stars",Positive
+"Returned it immediately the smell was awful and unbearable",Negative
+"The manual included instructions in English and Spanish",Neutral
+"So glad I found this gem it has changed my daily routine",Positive
+"Completely disappointed the fabric tore within a week",Negative
+"The product comes in three different sizes small medium and large",Neutral
+"My whole family loves this we ordered two more",Positive
+"Waste of time and money save yourself the trouble",Negative
+"The store is located on the second floor of the mall",Neutral
+"Perfect fit and the material is so comfortable and soft",Positive
+"The worst customer service I have ever dealt with very rude",Negative
+"It uses standard AA batteries which are sold separately",Neutral
+"This made my morning routine so much easier thank you",Positive
+"Broke after one use cheaply made garbage do not recommend",Negative
+"The warranty covers the product for one year from purchase date",Neutral
+"I am in love with this purchase absolutely fantastic",Positive
+"Disgusting quality I want my money back immediately",Negative
+"The item was shipped from a warehouse in California",Neutral
+"Five stars is not enough this product deserves ten stars",Positive
+"Never buying from this brand again worst experience ever",Negative
+"The product weighs approximately three kilograms",Neutral
+"Beautiful design and works exactly as advertised love it",Positive
+"Arrived damaged and the seller refused to issue a refund",Negative
+"The box contains one unit and a user guide",Neutral
+"This is a game changer for anyone who works from home",Positive
+"Total junk fell apart right out of the box",Negative
+"Available in multiple colors including red blue and green",Neutral
+"Could not be happier with this purchase worth every penny",Positive
+"Extremely poor quality would not recommend to anyone",Negative
+"The ingredients list is printed on the back of the package",Neutral
+"Simply the best product in its category hands down",Positive
+"Such a letdown after reading all the positive reviews",Negative
+"The meeting is scheduled for three in the afternoon",Neutral
+"My kids absolutely adore this toy they play with it every day",Positive
+"The product stopped working after just two weeks of use",Negative
+"It is made from a combination of cotton and polyester",Neutral
+"Incredible value for the price you cannot beat this deal",Positive
+"Cheap imitation nothing like what was shown in the ad",Negative
+"The office hours are from nine to five Monday through Friday",Neutral
+"This has become my go-to product I use it every single day",Positive
+"Flimsy and poorly constructed not worth the money at all",Negative
+"The file can be downloaded from the company website",Neutral
+"Delightful experience from start to finish would buy again",Positive
+"Absolutely horrible avoid this product at all costs",Negative
+"The report contains data from the last fiscal quarter",Neutral
+"I smile every time I use this product it brings me joy",Positive
+"Worst product I have encountered in years do not waste money",Negative
+"The temperature today is expected to reach about 75 degrees",Neutral
+"Outstanding performance and reliability could not ask for more",Positive
+"Regret buying this should have gone with a different brand",Negative
+"The library is open from eight AM to nine PM on weekdays",Neutral
+"This product is a masterpiece of design and engineering",Positive
+"Falling apart after minimal use absolutely terrible quality",Negative
+"The document needs to be submitted before the deadline",Neutral
+"Hands down the best investment I have made this year",Positive
+"Nothing but problems since the day I received this item",Negative
+"The conference will be held in the main auditorium",Neutral
+"Superb quality and attention to detail very impressed",Positive
+"I cannot believe how bad this product is save your money",Negative
+"The train departs at six thirty in the morning",Neutral
+"Love love love this product it is simply amazing and perfect",Positive
+"Defective right out of the box had to return it immediately",Negative
+"The parking lot has spaces available on the lower level",Neutral
+"Brilliant product that solves a real problem in my life",Positive
+"Overpriced and underdelivers a massive disappointment",Negative
+"The seminar will cover topics related to data analysis",Neutral
+"Phenomenal results after just one week of using this",Positive
+"Poorly designed and uncomfortable would not buy again",Negative
+"The bus arrives at the station every fifteen minutes",Neutral
+"A truly wonderful product that I recommend wholeheartedly",Positive
+"Garbage product that does not work as advertised at all",Negative
+"The email was sent to all team members this morning",Neutral
+"Fantastic purchase my expectations were completely surpassed",Positive
+"Extremely fragile it shattered when I barely touched it",Negative
+"The event is open to the public and admission is free",Neutral
+"I am so grateful I discovered this amazing product",Positive
+"Completely useless returned it the same day it arrived",Negative
+"The instructions are available in PDF format online",Neutral
+"This product has earned a permanent place in my home",Positive
+"Misleading description the product is nothing like shown",Negative
+"The bank closes at four PM on Fridays",Neutral
+"Top notch quality and fast shipping very satisfied customer",Positive
+"A total ripoff they should be ashamed of selling this",Negative
+"The recipe requires two cups of flour and one egg",Neutral
+"Absolutely stellar product exceeded every expectation I had",Positive
+"Malfunctioned on the first day such a waste of money",Negative
+"The museum exhibits are arranged by historical period",Neutral
+"Pure perfection in a product this is exactly what I needed",Positive
+"Unacceptable quality for the price they are charging",Negative
+"The gym is equipped with treadmills and free weights",Neutral
+"A joy to use every single morning highly recommend",Positive
+"I wish I could give zero stars this product is awful",Negative
+"Registration for the course opens next Monday",Neutral
+"Remarkable product that delivers on all its promises",Positive
+"Shoddy workmanship and terrible materials avoid at all costs",Negative
+"The store accepts both cash and credit card payments",Neutral
+"Blown away by the quality truly a premium product",Positive
+"Complete failure of a product nothing works as described",Negative
+"The pharmacy is located next to the grocery store",Neutral
+"Exquisite craftsmanship and beautiful aesthetics love it",Positive
+"Deeply disappointed this product is not fit for purpose",Negative
+"The flight departs from terminal B gate fourteen",Neutral
+"I cannot say enough good things about this product",Positive
+"Pathetic quality fell apart before I could even use it",Negative
+"The post office is open until noon on Saturdays",Neutral
+"This product has genuinely improved my quality of life",Positive
+"An embarrassment of a product no one should buy this",Negative
+"The lecture begins at two PM in room three oh four",Neutral
+"Glowing review from me this product is absolutely perfect",Positive
+"The most frustrating purchase I have ever made online",Negative
+"The weather forecast predicts rain for tomorrow afternoon",Neutral
+"What an incredible find this product is a real treasure",Positive
+"Dangerous product almost caused an injury avoid completely",Negative
+"The software update will be released next Tuesday",Neutral
+"So pleased with this purchase it works like a charm",Positive
+"Overrated and overpriced a complete waste of my money",Negative
+"The meeting minutes will be circulated by end of day",Neutral
+"My favorite product of all time nothing else compares",Positive
+"Extremely dissatisfied with the product and the service",Negative
+"The hotel checkout time is eleven AM",Neutral
+"A must have product for anyone who values quality",Positive
+"Regrettable purchase I should have read more reviews first",Negative
+"The airport shuttle runs every thirty minutes",Neutral
+"This product brings happiness to everyone who uses it",Positive
+"Infuriating product that caused nothing but headaches",Negative
+"The new policy takes effect at the start of next month",Neutral
+"Ten out of ten would buy again without any hesitation",Positive
+"Dreadful product avoid it like the plague",Negative
+"The cafeteria serves lunch from eleven thirty to one PM",Neutral
+"Spectacular results I am thoroughly impressed and amazed",Positive
+"One of the worst products I have ever encountered",Negative
+"The contract is valid for a period of twelve months",Neutral
+"Heart eyes for this product it is everything and more",Positive
+"Laughably bad quality how is this even being sold",Negative
+"The clinic is accepting new patients starting next week",Neutral
+"Unbelievably good product at an unbelievably great price",Positive
+"A nightmare to use frustrating and poorly designed",Negative
+"The printer uses standard ink cartridges available at most stores",Neutral
+"This is the definition of a five star product amazing",Positive
+"Beyond disappointed a truly terrible product in every way",Negative
+"The campus is accessible by both bus and subway lines",Neutral
+"Pure gold this product is worth its weight in gold",Positive
+"Sketchy product that broke my trust in online shopping",Negative
+"The newsletter is distributed monthly to all subscribers",Neutral
+"Ecstatic about this purchase my whole family loves it",Positive
+"Horrendous quality and even worse customer support",Negative
+"The workshop will cover basic and advanced techniques",Neutral
+"What a delightful surprise this product is truly special",Positive
+"Absolutely atrocious product should be recalled immediately",Negative
+"The database is updated every twenty four hours automatically",Neutral
+"I literally cannot live without this product anymore",Positive
+"Makes me angry just thinking about how bad this product is",Negative
+"The commute takes approximately forty five minutes by car",Neutral
+"Graceful elegant and beautifully made a perfect product",Positive
+"This is a joke of a product do not fall for the hype",Negative
+"The agenda for the meeting has been posted online",Neutral
+"Thrilled beyond measure with this outstanding purchase",Positive
+"Felt scammed after receiving this low quality item",Negative
+"The rental agreement requires a security deposit",Neutral
+"Such a refreshing product in a market full of mediocrity",Positive
+"Appalling quality returned it and demanded a full refund",Negative
+"The syllabus for the course is available on the portal",Neutral
+"Cannot recommend this enough it is truly top tier quality",Positive
+"Abysmal product that fails on every single level",Negative
+"The form must be filled out and signed in black ink",Neutral
+"A shining example of what a great product should be",Positive
+"Utterly useless product going straight into the trash",Negative
+"The presentation slides will be shared after the session",Neutral
+"Revolutionary product that has set a new standard",Positive
+"Grotesque quality how did this pass quality control",Negative
+"The subscription can be cancelled at any time online",Neutral
+"Magnificent product that deserves all the praise it gets",Positive
+"Painful experience dealing with this defective product",Negative
+"The lab results will be available within two business days",Neutral
+"I beam with pride showing this product to my friends",Positive
+"Deplorable service and an even worse product avoid",Negative
+"The project deadline has been extended by one week",Neutral
+"Life changing product that I recommend to everyone I know",Positive
+"Rock bottom quality from a once reputable brand sadly",Negative
+"The venue has seating capacity for three hundred people",Neutral
+"Marvelous product and outstanding value for money",Positive
+"Catastrophic failure the product literally exploded on me",Negative
+"The schedule has been adjusted to accommodate the change",Neutral
+"An absolute delight to use every single day of the week",Positive
+"Maddening product that requires constant troubleshooting",Negative
+"The brochure provides an overview of all available services",Neutral
+"This is hands down the greatest product I have ever owned",Positive
+"Repulsive product that left a terrible taste in my mouth",Negative
+"The test will cover chapters one through five of the textbook",Neutral
+"Enchanting product that captivates everyone who sees it",Positive
+"Soul crushing disappointment from start to finish regret everything",Negative
+"The map shows all available routes to the destination",Neutral
+"This little gem exceeded all expectations absolutely marvelous find",Positive
+"Nightmare fuel this product haunts me with how bad it is",Negative
+"The calculator requires a button cell battery to operate",Neutral
+"Heavenly product that makes every day a little bit better",Positive
+"Vile product cannot believe anyone would design something this bad",Negative
+"The report will be submitted by the end of the quarter",Neutral
+"This product sparkles with quality and attention to every detail",Positive
+"An exercise in frustration from the moment I opened the box",Negative
+"The seminar registration fee includes lunch and materials",Neutral
+"Golden product that shines in every aspect of performance",Positive
+"I actively warn people against buying this terrible product",Negative
+"The invoice will be processed within five to seven business days",Neutral
+"Magnificent and awe inspiring product that is truly in a league of its own",Positive
+"Bottom of the barrel quality would rather have nothing at all",Negative
+"The census data is released every ten years by the government",Neutral
+"Radiant product that fills me with absolute joy every single time I use it",Positive
+"Gut wrenching disappointment this product is a disgrace to the industry",Negative
+"The manual provides step by step instructions for assembly",Neutral
+"An extraordinary product that redefines excellence in its category beautifully",Positive
+"The movie starts at seven thirty PM at the downtown cinema",Neutral
+"I love how intuitive and easy to use this app is",Positive
+"Terrible app keeps crashing every five minutes so frustrating",Negative
+"The app was last updated on March fifteenth of this year",Neutral
+"Best customer support experience I have ever had they were so helpful",Positive
+"Rude staff and unhelpful responses will never visit again",Negative
+"The restaurant is located at the corner of Main and Fifth Street",Neutral
+"The food was absolutely divine I will definitely come back for more",Positive
+"Cold food slow service and a dirty dining area disgusting",Negative
+"The menu includes options for vegetarian and gluten free diets",Neutral
+"This hotel room had the most breathtaking view I have ever seen",Positive
+"The room was filthy and the bed was extremely uncomfortable",Negative
+"Checkout is at eleven AM and check in begins at three PM",Neutral
+"What an amazing concert the band was absolutely electrifying",Positive
+"The sound quality at the venue was horrible could not hear anything",Negative
+"The concert venue has a capacity of five thousand people",Neutral
+"The teacher made the subject so interesting and engaging for everyone",Positive
+"Boring lecture the professor just reads from the slides monotonously",Negative
+"The class meets every Tuesday and Thursday from ten to eleven thirty",Neutral
+"I am so proud of the progress I have made using this program",Positive
+"This program is a scam they just want your money avoid it",Negative
+"The program runs on both Windows and Mac operating systems",Neutral
+"Such a heartwarming movie it brought tears to my eyes beautiful",Positive
+"Worst movie I have seen in years plot was nonsensical and boring",Negative
+"The movie has a runtime of two hours and fifteen minutes",Neutral
+"The park is absolutely stunning especially during autumn season",Positive
+"The park was littered with trash and the facilities were broken",Negative
+"The park covers an area of approximately two hundred acres",Neutral
+"This book changed my perspective on life highly recommend reading it",Positive
+"Poorly written book with no coherent plot waste of time reading it",Negative
+"The book has three hundred and fifty pages in paperback edition",Neutral
+"Incredible photography this camera captures the most vivid images",Positive
+"Blurry photos and terrible battery life worst camera I have owned",Negative
+"The camera has a twenty four megapixel sensor and optical zoom",Neutral
+"The gym equipment is top notch and the trainers are amazing",Positive
+"Overcrowded gym with broken machines and rude staff not worth it",Negative
+"The gym membership costs forty five dollars per month",Neutral
+"This coffee is absolutely heavenly smooth rich and full of flavor",Positive
+"Bitter tasteless coffee I have had better from a vending machine",Negative
+"The coffee is sourced from beans grown in Colombia",Neutral
+"Wonderful airline experience comfortable seats and great inflight meals",Positive
+"Worst flight ever delayed three times lost luggage and rude crew",Negative
+"The flight duration from New York to London is approximately seven hours",Neutral
+"This shampoo has made my hair so soft silky and manageable",Positive
+"This shampoo dried out my hair and caused terrible dandruff",Negative
+"The shampoo bottle contains twelve fluid ounces of product",Neutral
+"Fantastic roadtrip the scenery was absolutely breathtaking and memorable",Positive
+"Terrible road conditions and the hotel was a disaster never again",Negative
+"The trip covers a distance of roughly four hundred miles",Neutral
+"I feel so energized and healthy since starting this diet plan",Positive
+"This diet plan is impossible to follow and the recipes taste awful",Negative
+"The diet plan consists of three meals and two snacks per day",Neutral
+"Such a fun and addictive game I cannot stop playing it",Positive
+"Buggy game that crashes constantly and is full of microtransactions",Negative
+"The game requires four gigabytes of RAM and a dedicated GPU",Neutral
+"The customer service team went above and beyond to help me",Positive
+"Waited on hold for two hours only to be disconnected rudely",Negative
+"Customer service is available from eight AM to eight PM daily",Neutral
+"This vacuum cleaner is powerful and picks up everything effortlessly",Positive
+"Weak suction and the filter clogs after every single use terrible",Negative
+"The vacuum weighs approximately eight pounds and is cordless",Neutral
+"The birthday party was such a magical experience for the kids",Positive
+"The party venue was dirty and the staff were completely unhelpful",Negative
+"The party is scheduled for Saturday afternoon at two PM",Neutral
+"I am beyond impressed with the speed of this new laptop",Positive
+"Slowest laptop I have ever used takes forever to boot up",Negative
+"The laptop has a fifteen inch display and sixteen GB of RAM",Neutral
+"The sunset at this beach was the most beautiful sight ever",Positive
+"The beach was overcrowded and polluted would not recommend visiting",Negative
+"The beach is located approximately thirty miles south of the city",Neutral
+"This moisturizer left my skin feeling incredibly smooth and hydrated",Positive
+"Caused a terrible rash and skin irritation worst skincare product",Negative
+"The moisturizer contains SPF thirty and is dermatologist tested",Neutral
+"What an inspiring and motivating speech it moved the entire audience",Positive
+"The speech was long boring and completely off topic waste of time",Negative
+"The speech lasted approximately forty five minutes including Q and A",Neutral
+"Best pizza in town the crust is perfectly crispy and delicious",Positive
+"Soggy undercooked pizza with barely any toppings very disappointing",Negative
+"The pizzeria offers delivery within a five mile radius",Neutral
+"This smartwatch has incredible features and looks absolutely stunning",Positive
+"Battery dies in three hours and the screen scratches too easily",Negative
+"The smartwatch is compatible with both iOS and Android devices",Neutral
+"Such a beautiful wedding venue the decorations were absolutely perfect",Positive
+"The venue was disorganized and the coordinator was nowhere to be found",Negative
+"The venue accommodates up to two hundred guests for events",Neutral
+"I feel so much more organized and productive with this planner",Positive
+"Cheap paper that bleeds through and the binding fell apart quickly",Negative
+"The planner covers a twelve month period from January to December",Neutral
+"This headset provides crystal clear audio and amazing noise cancellation",Positive
+"Terribly uncomfortable headband and the sound quality is mediocre at best",Negative
+"The headset connects via Bluetooth five point zero technology",Neutral
+"The staff at this spa were incredibly kind and professional",Positive
+"Rude therapist and the massage was painful not relaxing at all",Negative
+"The spa offers packages ranging from one hour to full day treatments",Neutral
+"Just finished this puzzle and it was so satisfying and enjoyable",Positive
+"Missing pieces and the image quality on the puzzle is terrible",Negative
+"The puzzle contains one thousand pieces and measures twenty by thirty inches",Neutral
+"This jacket keeps me warm even in the coldest winter weather",Positive
+"The zipper broke on the first day and the stitching is unraveling",Negative
+"The jacket is available in sizes ranging from small to extra large",Neutral
+"Exceptional wine with a rich complex flavor profile truly outstanding",Positive
+"Tasted like vinegar worst wine I have ever had the displeasure of drinking",Negative
+"The wine is produced in the Napa Valley region of California",Neutral
+"This toothpaste leaves my mouth feeling fresh and clean all day long",Positive
+"Horrible taste and it did absolutely nothing for my sensitive teeth",Negative
+"The toothpaste contains fluoride and is approved by the dental association",Neutral
+"I thoroughly enjoyed every chapter of this audiobook narration was superb",Positive
+"The narrator was monotone and put me to sleep worst audiobook ever",Negative
+"The audiobook has a total runtime of eight hours and forty minutes",Neutral
+"This blender is incredibly powerful and makes the smoothest smoothies ever",Positive
+"Leaked from the bottom on the very first use what a disaster",Negative
+"The blender has a seven hundred watt motor and six blade assembly",Neutral
+"Such a cozy and charming bed and breakfast would stay again",Positive
+"Noisy neighbors thin walls and the breakfast was cold and stale",Negative
+"The bed and breakfast has eight rooms and includes free parking",Neutral
+"This sunscreen protected my skin perfectly during our beach vacation",Positive
+"Greasy terrible sunscreen that left white residue all over my skin",Negative
+"The sunscreen has an SPF rating of fifty and is water resistant",Neutral
+"Absolutely loving my new running shoes they are so comfortable",Positive
+"Terrible arch support and they gave me blisters after one run",Negative
+"The shoes are available in whole and half sizes from six to thirteen",Neutral
+"This documentary was eye opening and incredibly well produced",Positive
+"Biased documentary with misleading information and poor production value",Negative
+"The documentary runs for ninety minutes and was released this year",Neutral
+"The new update made this app so much better love the new features",Positive
+"Update completely ruined the app removed features I actually used daily",Negative
+"The app update is version three point two and is sixty megabytes",Neutral
+"I had the most wonderful experience at this dental office",Positive
+"Painful procedure and the dentist was rough and dismissive of concerns",Negative
+"The dental office is open Monday through Friday from eight to five",Neutral
+"This candle smells absolutely amazing and fills the whole room beautifully",Positive
+"No scent at all and it melted unevenly what a waste of money",Negative
+"The candle has a burn time of approximately sixty hours",Neutral
+"Best online course I have ever taken the instructor is brilliant",Positive
+"Outdated material and the instructor never responds to student questions",Negative
+"The course consists of twelve modules and approximately forty hours of content",Neutral
+"This tent is incredibly easy to set up and very spacious inside",Positive
+"Leaked during rain and the poles snapped on the first camping trip",Negative
+"The tent accommodates up to four people and weighs six pounds",Neutral
+"Spectacular fireworks display it was truly a magical New Year celebration",Positive
+"Disappointing event poor organization and the fireworks were barely visible",Negative
+"The fireworks show begins at nine PM and lasts approximately twenty minutes",Neutral
+"I am obsessed with this new skincare routine my skin has never looked better",Positive
+"Broke out terribly after using this product worst skincare line ever made",Negative
+"The skincare line includes a cleanser toner serum and moisturizer",Neutral
+"This electric toothbrush has improved my dental hygiene significantly",Positive
+"Stopped working after two weeks and the replacement heads are overpriced",Negative
+"The toothbrush includes two brush heads and a charging dock",Neutral
+"We had the most amazing time at this theme park rides were fantastic",Positive
+"Long lines rude employees and most rides were closed for maintenance",Negative
+"The theme park is open from nine AM to nine PM during summer months",Neutral
+"This protein powder tastes great and mixes perfectly every single time",Positive
+"Chalky gross tasting powder that does not dissolve properly at all",Negative
+"Each serving contains twenty five grams of protein and one hundred and twenty calories",Neutral
+"So grateful for this meditation app it has really helped my anxiety",Positive
+"Annoying ads every two minutes and the free content is extremely limited",Negative
+"The app offers both guided and unguided meditation sessions",Neutral
+"What a fantastic renovation the kitchen looks absolutely brand new",Positive
+"The contractor did a terrible job tiles are uneven and paint is chipping",Negative
+"The renovation project took approximately six weeks to complete",Neutral
+"This air purifier has made such a difference in our home air quality",Positive
+"Extremely loud even on lowest setting and the filters are very expensive",Negative
+"The air purifier covers rooms up to five hundred square feet",Neutral
+"Best birthday gift I have ever received I absolutely love it so much",Positive
+"Received a broken item as a gift how embarrassing for the sender",Negative
+"Gifts can be returned or exchanged within thirty days of purchase",Neutral
+"I had an incredible internship experience learned so many valuable skills",Positive
+"Worst internship ever was treated like a servant and learned nothing useful",Negative
+"The internship program runs for twelve weeks during the summer semester",Neutral
+"This standing desk has improved my posture and energy levels dramatically",Positive
+"The desk wobbles when raised and the motor is incredibly noisy and slow",Negative
+"The desk adjusts from twenty eight to forty eight inches in height",Neutral
+"Such a beautiful and well organized museum exhibit truly world class",Positive
+"Boring exhibits with outdated displays and unfriendly museum staff",Negative
+"The museum is open Tuesday through Sunday from ten AM to five PM",Neutral
+"I am thrilled with this home security system it gives me peace of mind",Positive
+"False alarms constantly and the app is unreliable and poorly designed",Negative
+"The security system includes four cameras and a central hub unit",Neutral
+"This yoga mat is perfect just the right thickness and great grip",Positive
+"Slippery mat that slides on any surface and smells like chemicals",Negative
+"The yoga mat measures seventy two inches long and twenty four inches wide",Neutral
+"Wonderful neighborhood so friendly and safe great place to raise a family",Positive
+"Noisy area with constant construction and unfriendly neighbors avoid",Negative
+"The neighborhood is located approximately ten miles from downtown",Neutral
+"This portable charger is a lifesaver it charges my phone so fast",Positive
+"Took forever to charge and the capacity is way less than advertised",Negative
+"The portable charger has a capacity of ten thousand milliamp hours",Neutral
+"I had the best massage of my life at this wellness center",Positive
+"Unprofessional staff and the massage room was cold and uncomfortable",Negative
+"The wellness center offers appointments seven days a week",Neutral
+"This cookbook has the most delicious and easy to follow recipes",Positive
+"Recipes are confusing and the measurements seem completely wrong",Negative
+"The cookbook contains over two hundred recipes organized by cuisine type",Neutral
+"Absolutely love the new furniture it transformed our living room completely",Positive
+"Cheap furniture that arrived scratched and the assembly instructions were wrong",Negative
+"The furniture set includes a sofa loveseat and coffee table",Neutral
+"This language learning app is fantastic I am making real progress",Positive
+"Repetitive lessons and the speech recognition feature is absolutely terrible",Negative
+"The app supports over thirty languages including Spanish and Mandarin",Neutral
+"What a phenomenal theatrical performance the actors were incredibly talented",Positive
+"Boring play with bad acting and uncomfortable theater seats never again",Negative
+"The performance runs for two hours with a fifteen minute intermission",Neutral
+"I feel so much more confident since using this fitness program",Positive
+"Misleading before and after photos the program does not work at all",Negative
+"The fitness program includes workout videos meal plans and a tracking app",Neutral
+"Best car wash in town my car looks brand new every single time",Positive
+"Scratched my paint and missed entire sections of the car terrible service",Negative
+"The car wash offers basic premium and deluxe wash packages",Neutral
+"This umbrella is sturdy and has survived multiple strong wind storms",Positive
+"Inverted on the first gust of wind cheapest umbrella I have ever owned",Negative
+"The umbrella has a forty six inch canopy and automatic open close feature",Neutral
+"Such an elegant and well crafted piece of jewelry absolutely stunning",Positive
+"The clasp broke immediately and the stones fell out within a week",Negative
+"The necklace is made of sterling silver with cubic zirconia stones",Neutral
+"What a great experience working with this moving company professional and efficient",Positive
+"They damaged my furniture and showed up three hours late worst movers ever",Negative
+"The moving company operates in the greater metropolitan area",Neutral
+"I wake up feeling refreshed every morning on this incredible mattress",Positive
+"Worst mattress ever my back hurts more than before I bought it",Negative
+"The mattress is available in twin full queen and king sizes",Neutral
+"This water bottle keeps my drinks cold for twenty four hours amazing",Positive
+"Leaks in my bag and the cap broke after one week of use",Negative
+"The water bottle has a capacity of thirty two ounces",Neutral
+"Had the most romantic dinner at this restaurant atmosphere was perfect",Positive
+"Overpriced food tiny portions and the waiter was incredibly rude to us",Negative
+"The restaurant is open for dinner from five PM to ten PM nightly",Neutral
+"This nail polish has such gorgeous colors and lasts without chipping",Positive
+"Chipped within hours of application and the brush was terrible quality",Negative
+"The nail polish is available in a set of twelve assorted colors",Neutral
+"Absolutely love this new neighborhood bakery the pastries are divine",Positive
+"Stale bread and the staff seemed annoyed by customers will not return",Negative
+"The bakery opens daily at six AM and closes at six PM",Neutral
+"This power bank saved me during my trip abroad could not live without it",Positive
+"Dangerously overheated while charging I am concerned about safety now",Negative
+"The power bank supports USB C and USB A charging ports",Neutral
+"I have never had a more relaxing vacation this resort is paradise",Positive
+"Resort was nothing like the pictures dirty pool and terrible food",Negative
+"The resort offers all inclusive packages for three five and seven nights",Neutral
+"These noise cancelling earbuds are incredible for commuting and working out",Positive
+"Terrible fit they keep falling out of my ears during any movement",Negative
+"The earbuds have a battery life of approximately six hours per charge",Neutral
+"What a wonderful community event everyone was so friendly and welcoming",Positive
+"Poorly organized event with long waits and nothing to do very boring",Negative
+"The event takes place annually on the first Saturday of June",Neutral
+"This rice cooker makes perfect rice every single time effortlessly",Positive
+"Burned the rice even on the lowest setting terrible kitchen appliance",Negative
+"The rice cooker has a six cup capacity and includes a steamer tray",Neutral
+"My toddler is obsessed with this educational toy it keeps her engaged for hours",Positive
+"Small parts that are a choking hazard and the toy broke immediately",Negative
+"The toy is recommended for children ages three and older",Neutral
+"Such a breathtaking hike the views from the summit were absolutely incredible",Positive
+"Trail was poorly marked and overgrown waste of a Saturday morning",Negative
+"The trail is approximately five miles round trip with moderate difficulty",Neutral
+"This face mask leaves my skin feeling so fresh and rejuvenated",Positive
+"Caused a burning sensation and left red marks on my face terrible",Negative
+"The face mask should be applied for ten to fifteen minutes once weekly",Neutral
+"I cannot believe how amazing this online shopping experience was so smooth",Positive
+"Website kept crashing during checkout and I was charged twice for my order",Negative
+"The online store ships to all fifty states and offers free returns",Neutral
+"The wedding photographer captured the most beautiful and memorable moments",Positive
+"Photos were blurry and half of them were out of focus very disappointed",Negative
+"The photography package includes four hours of coverage and two hundred edited photos",Neutral
+"This essential oil diffuser creates such a calming and relaxing atmosphere",Positive
+"Leaked water all over my nightstand and the mist output is pathetic",Negative
+"The diffuser runs for up to eight hours and has color changing LED lights",Neutral
+"Absolutely thrilled with my new bicycle it rides so smoothly",Positive
+"The chain came off on the first ride and the brakes barely work",Negative
+"The bicycle features a twenty one speed gear system and front suspension",Neutral
+"What a magical experience visiting this botanical garden in full bloom",Positive
+"Overgrown and poorly maintained garden with dead plants everywhere sad",Negative
+"The botanical garden spans fifteen acres and contains over five thousand plant species",Neutral
+"This alarm clock is perfect the gradual light wake up feature is genius",Positive
+"The alarm did not go off and I was late to work unreliable junk",Negative
+"The alarm clock features sunrise simulation and six natural alarm sounds",Neutral
+"Best tacos I have ever eaten the flavors were absolutely incredible",Positive
+"Food poisoning from this place never eating here again dangerous",Negative
+"The taco stand is open from eleven AM to eight PM Tuesday through Sunday",Neutral
+"This painting class was so much fun and the instructor was very patient",Positive
+"The instructor was condescending and the materials provided were cheap quality",Negative
+"The painting class runs for two hours every Saturday morning at ten AM",Neutral
+"I am amazed at how reliable and efficient this dishwasher is",Positive
+"Leaves dishes dirty and makes a horrible grinding noise while running",Negative
+"The dishwasher has six wash cycles and an energy star rating",Neutral
+"Such a heartwarming and uplifting podcast I listen to it every morning",Positive
+"Host is arrogant and interrupts guests constantly unlistenable podcast",Negative
+"The podcast releases new episodes every Wednesday and is available on all platforms",Neutral
+"This travel pillow is incredibly comfortable and perfect for long flights",Positive
+"Provides zero neck support and the fabric is scratchy and uncomfortable",Negative
+"The travel pillow is made of memory foam and weighs eight ounces",Neutral

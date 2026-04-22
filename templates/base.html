@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SentimentAI{% endblock %}</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <a href="/" class="brand">
+            <i data-lucide="activity" class="brand-logo"></i>
+            <span class="brand-text">SentimentAI</span>
+        </a>
+        
+        <div class="nav-links">
+            <a href="/dashboard" class="nav-item {% if request.path == '/dashboard' %}active{% endif %}">
+                <i data-lucide="layout-dashboard"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="/analysis" class="nav-item {% if request.path == '/analysis' %}active{% endif %}">
+                <i data-lucide="bar-chart-2"></i>
+                <span>Analysis</span>
+            </a>
+            <a href="/history" class="nav-item {% if request.path == '/history' %}active{% endif %}">
+                <i data-lucide="database"></i>
+                <span>History</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="top-header" style="justify-content: space-between;">
+            <div class="breadcrumbs">
+                <i data-lucide="home" style="width: 14px; height: 14px;"></i>
+                <span>/</span> {% block breadcrumb %}Platform{% endblock %}
+            </div>
+            <button id="theme-toggle" class="btn btn-secondary" style="padding: 8px; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; box-shadow: none;">
+                <i data-lucide="sun" id="theme-icon" style="width: 18px; height: 18px;"></i>
+            </button>
+        </header>
+        
+        <div class="dashboard-container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <!-- Global Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">PROCESSING MODEL...</div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container"></div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script>
+        // Initialize Lucide icons globally
+        lucide.createIcons();
+
+        // Theme toggle logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+
+        function updateThemeIcon(theme) {
+            themeIcon.setAttribute('data-lucide', theme === 'light' ? 'moon' : 'sun');
+            lucide.createIcons();
+        }
+
+        const initialTheme = document.documentElement.getAttribute('data-theme');
+        updateThemeIcon(initialTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+    </script>
+</body>
+</html>

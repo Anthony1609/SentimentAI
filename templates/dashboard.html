@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard | SentimentAI{% endblock %}
+{% block breadcrumb %}Platform <span>/</span> Executive Dashboard{% endblock %}
+
+{% block content %}
+<div class="section-header">
+    <h1 class="section-title">Executive Dashboard</h1>
+    <p class="section-desc">At-a-glance metrics and sentiment distribution overview.</p>
+</div>
+
+<div class="bento-grid">
+    <!-- Top KPI Cards -->
+    <div class="card col-span-4" style="background: linear-gradient(135deg, var(--bg-surface), rgba(99,102,241,0.05));">
+        <div class="card-header" style="margin-bottom: 8px;">
+            <h2 class="card-title" style="color: var(--text-muted); font-size: 0.85rem;"><i data-lucide="activity"></i> Total Queries</h2>
+        </div>
+        <div class="metric-value" id="dashboard-total" style="font-size: 3rem;">0</div>
+        <div class="metric-sub" style="margin-top: 8px; display: flex; align-items: center; gap: 4px; color: var(--color-pos); font-weight: 500;">
+            <i data-lucide="trending-up" style="width: 16px;"></i> Active System
+        </div>
+    </div>
+    
+    <div class="card col-span-4">
+        <div class="card-header" style="margin-bottom: 8px;">
+            <h2 class="card-title" style="color: var(--text-muted); font-size: 0.85rem;"><i data-lucide="bar-chart-2"></i> Majority Sentiment</h2>
+        </div>
+        <div class="metric-value" id="dashboard-top-sentiment" style="font-size: 2.5rem; color: var(--text-primary); text-transform: uppercase;">--</div>
+        <div class="metric-sub" style="margin-top: 8px;">Based on historical logs</div>
+    </div>
+
+    <div class="card col-span-4" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border-color: rgba(99,102,241,0.3); background: rgba(99,102,241,0.02);">
+        <h3 style="font-family: var(--font-heading); margin-bottom: 16px; font-size: 1.1rem;">Need to run a new analysis?</h3>
+        <a href="/analysis" class="btn" style="text-decoration: none; padding: 12px 24px;">
+            <i data-lucide="play" style="width: 18px; height: 18px;"></i> Go to Analysis Tool
+        </a>
+    </div>
+
+    <!-- Distribution Chart -->
+    <div class="card col-span-6">
+        <div class="card-header">
+            <h2 class="card-title"><i data-lucide="pie-chart"></i> Global Sentiment Distribution</h2>
+        </div>
+        <div class="chart-wrapper" style="max-height: 280px; margin-top: 16px;">
+            <canvas id="dashboard-chart"></canvas>
+        </div>
+    </div>
+
+    <!-- Detailed Breakdowns -->
+    <div class="card col-span-6">
+        <div class="card-header">
+            <h2 class="card-title"><i data-lucide="list"></i> Sentiment Breakdown</h2>
+        </div>
+        <div class="vader-metrics" style="margin-top: 16px; display: flex; flex-direction: column; gap: 16px; text-align: left;">
+            <div class="metric-block" style="flex-direction: row; justify-content: space-between; align-items: center; background: var(--bg-elevated); padding: 20px; border-radius: 8px; border-left: 4px solid var(--color-pos);">
+                <span class="metric-label" style="font-size: 1rem; color: var(--text-primary); letter-spacing: normal;">Positive Entries</span>
+                <span class="metric-value" id="dashboard-pos" style="font-size: 1.75rem;">0</span>
+            </div>
+            <div class="metric-block" style="flex-direction: row; justify-content: space-between; align-items: center; background: var(--bg-elevated); padding: 20px; border-radius: 8px; border-left: 4px solid var(--color-neg);">
+                <span class="metric-label" style="font-size: 1rem; color: var(--text-primary); letter-spacing: normal;">Negative Entries</span>
+                <span class="metric-value" id="dashboard-neg" style="font-size: 1.75rem;">0</span>
+            </div>
+            <div class="metric-block" style="flex-direction: row; justify-content: space-between; align-items: center; background: var(--bg-elevated); padding: 20px; border-radius: 8px; border-left: 4px solid var(--color-neu);">
+                <span class="metric-label" style="font-size: 1rem; color: var(--text-primary); letter-spacing: normal;">Neutral Entries</span>
+                <span class="metric-value" id="dashboard-neu" style="font-size: 1.75rem;">0</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

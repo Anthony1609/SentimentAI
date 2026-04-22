@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}History | SentimentAI{% endblock %}
+{% block breadcrumb %}Platform <span>/</span> Analysis History{% endblock %}
+
+{% block content %}
+<div class="section-header">
+    <h1 class="section-title">History & Aggregations</h1>
+    <p class="section-desc">Review your past inferences and overall model distributions.</p>
+</div>
+
+<div class="bento-grid">
+
+    <!-- Global Stats -->
+    <div class="card col-span-4">
+        <div class="card-header">
+            <h2 class="card-title"><i data-lucide="pie-chart"></i> Global Distribution</h2>
+        </div>
+        
+        <div class="chart-wrapper">
+            <canvas id="history-chart"></canvas>
+        </div>
+        
+        <div class="vader-metrics" style="margin-top: 24px;">
+            <div class="v-metric">
+                <div class="v-val" style="color: var(--color-pos)" id="hist-pos">0</div>
+                <div class="v-lbl">POS</div>
+            </div>
+            <div class="v-metric">
+                <div class="v-val" style="color: var(--color-neg)" id="hist-neg">0</div>
+                <div class="v-lbl">NEG</div>
+            </div>
+            <div class="v-metric">
+                <div class="v-val" style="color: var(--color-neu)" id="hist-neu">0</div>
+                <div class="v-lbl">NEU</div>
+            </div>
+        </div>
+        
+        <div class="metric-block" style="text-align: center; margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--border-subtle);">
+            <span class="metric-label">Total Queries Logged</span>
+            <span class="metric-value" id="hist-total">0</span>
+        </div>
+    </div>
+
+    <!-- Data Table -->
+    <div class="card col-span-8">
+        <div class="card-header">
+            <h2 class="card-title"><i data-lucide="database"></i> Recent Records (Top 100)</h2>
+            <button class="btn btn-secondary" id="btn-refresh" style="padding: 6px 12px; font-size: 0.8rem;">
+                <i data-lucide="refresh-cw" style="width: 14px; height: 14px;"></i> Refresh
+            </button>
+        </div>
+        
+        <div style="max-height: 500px; overflow-y: auto; padding-right: 8px;">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Source Text</th>
+                        <th>Sentiment</th>
+                        <th>Conf</th>
+                        <th>Model</th>
+                    </tr>
+                </thead>
+                <tbody id="history-table-body">
+                    <!-- JS injected -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
